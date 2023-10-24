@@ -110,7 +110,7 @@ var Typer={
 		else
 			this.write("|"); // else write it
 	}
-}
+};
 document.addEventListener('touchstart', (e) => {
   document.querySelector('.settings').style.display = 'none';
   Typer.addText(e); //Capture the tap event for mobileand call the addText, this is executed on page load
