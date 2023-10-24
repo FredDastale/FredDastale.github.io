@@ -5,6 +5,10 @@
 
 $(
 	function(){
+		document.addEventListener('touchstart', (e) => {
+  document.querySelector('.settings').style.display = 'none';
+  Typer.addText(e); //Capture the tap event for mobileand call the addText, this is executed on page load
+});
 		$( document ).keydown(
 			function ( event ) {
 				Typer.addText( event ); //Capture the keydown event and call the addText, this is executed on page load
@@ -111,7 +115,4 @@ var Typer={
 			this.write("|"); // else write it
 	}
 };
-document.addEventListener('touchstart', (e) => {
-  document.querySelector('.settings').style.display = 'none';
-  Typer.addText(e); //Capture the tap event for mobileand call the addText, this is executed on page load
-});
+
