@@ -51,22 +51,7 @@ body {
     font-size: 16px; /* Imposta la dimensione base del carattere del body a 16px */
 }
 
-@media screen and (max-width: 48rem) {
-    /* Stili per schermi di larghezza massima di 48rem (ad esempio, dispositivi mobili) */
-    body {
-        font-size: 14px; /* Riduci la dimensione del carattere del body per dispositivi mobili */
-    }
-
-    /* Altri stili per dispositivi mobili */
-}
-
-/* Utilizza 'rem' per definire altri stili */
-.header {
-    font-size: 2rem; /* 2 volte la dimensione base del carattere */
-    margin-bottom: 1.5rem; /* 1.5 volte la dimensione base del carattere */
-}
-
-.button {
-    font-size: 1.2rem; /* 1.2 volte la dimensione base del carattere */
-    padding: 1rem 2rem; /* 1rem sopra e sotto, 2rem a sinistra e a destra */
-}
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+} 
