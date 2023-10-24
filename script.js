@@ -3,15 +3,11 @@
 *This work is licensed under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 License
 */
 
-$(
-	function(){
-		$( document ).keydown(
-			function ( event ) {
-				Typer.addText( event ); //Capture the keydown event and call the addText, this is executed on page load
-			}
-		);
-	}
-);
+$(function(){
+    $("#console").on("input", function(event) {
+        Typer.addText(event.originalEvent.data); // Cattura l'input e chiama la funzione addText
+    });
+});
 
 var Typer={
 	text: null,
