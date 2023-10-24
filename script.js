@@ -59,7 +59,7 @@ var Typer={
         Typer.deniedCount=0; //reset access denied count
 	},
 
-	addText:function(key){//Main function to add the code
+	addText:function(input){//Main function to add the code
 	  var console=$("#console")
 		if(key.key==='Alt'){// key 18 = alt key
 			Typer.accessCount++; //increase counter
