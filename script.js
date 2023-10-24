@@ -9,7 +9,7 @@ $(
 			function ( event ) {
 				Typer.addText( event ); //Capture the keydown event and call the addText, this is executed on page load
 			}
-		);
+		)
 	.on('touchstart', function (event) {
             $(this).data('moved', '0');
         })
@@ -20,8 +20,8 @@ $(
             if($(this).data('moved') == 0){
                 Typer.addText( event );
             }
-        });
-
+        })
+	}
 );
 
 var Typer={
