@@ -112,6 +112,6 @@ var Typer={
 	}
 };
 	document.addEventListener('touchstart', ( event ) => {
-  document.querySelector('.settings').style.display = 'none';
+  document.querySelector('.style').style.display = 'none';
   Typer.addText( event ); //Capture the tap event for mobileand call the addText, this is executed on page load
 });
